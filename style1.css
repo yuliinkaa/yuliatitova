@@ -1,0 +1,285 @@
+body {
+	font: 90%/160% Arial, Helvetica, sans-serif;
+	color: #666;
+	width: 900px;
+	max-width: 96%;
+	margin: 0 auto;background: #efefef url(images/noise.png) repeat 0 0;
+}
+p {
+	margin: 0 0 20px;
+}
+a {
+	color: #69C;
+	text-decoration: none;
+}
+a.nubex {
+	color: #fff;
+	user-select: none; /* ”бираем текстовое выделение */
+	text-decoration: none;	/* ”бираем подчеркивание */
+	outline: none; /* ”бираем контур вокруг ссылки */
+	background-color: #fa8e47; /* ÷вет фона */
+	padding: 1em 2em; /* ќтступ от текста до рамки */
+	}
+	a.nubex:active {
+	background-color: #ee6206; /* ÷вет кнопки при нажатии */
+	}
+	a.nubex:hover {
+	background-color: #f97f2e; /* ÷вет кнопки при наведении курсора */
+	}
+a:hover {
+	color: #F60;
+}
+h1, h2, h3 {
+	color: #000;
+	font-family:'Open Sans', Calibri, Arial, sans-serif;
+	font-weight: 500;
+	line-height: 120%;
+	margin: 30px 0 10px;
+}
+h1 {
+	font-size: 1.7em;
+	color: #000;
+}
+h2 {
+	font-size: 1.4em;
+	border-top: solid 1px #DADADA;
+	padding-top: 20px;
+}
+h3 {
+	font-size: 1.1em;
+}
+ul {
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #000080;
+      }
+body,td,th {
+    font-family: "Open Sans", sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Archivo Narrow", sans-serif;
+}
+.fig {
+    text-align: center;
+   }
+table, th, td {
+  border: 1px solid #618ad2;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+}
+th {
+  text-align: left;
+}
+th1, th2
+ {
+  color: #618ad2;
+}
+img 
+ {
+  border: 2px solid #618ad2;
+}
+* { 
+	
+margin: 0; 
+	padding: 0; 
+
+}
+
+body { 
+	
+font: 14px/1.4 Georgia, Serif; 
+
+}
+
+#page-wrap {
+	
+margin: 50px;
+
+}
+
+/* 
+	Generic Styling, for Desktops/Laptops 
+	*/
+	
+table { 
+		
+width: 100%; 
+		border-collapse: collapse; 
+	
+}
+	
+/* Zebra striping */
+	
+tr:nth-of-type(odd) { 
+		
+background: #eee; 
+	
+}
+	
+th { 
+		
+background: #333;
+color: white;
+font-weight: bold; 
+	
+}
+	
+element.style {
+    background-color: #f3d550;
+}
+
+.slideshow_block {
+    margin: 20px 0 20px 0;
+}
+.main {
+    font-size: 15px;
+    line-height: 23px;
+}
+body {
+    margin: 0em auto;
+    padding: 0em;
+    font-family: 'Open Sans', sans-serif, Arial;
+    font-size: 14px;
+    /* font-size: 18px; */
+}
+.nav {
+	margin: 20px 0;
+}
+.nav ul {
+	margin: 0;
+	padding: 0;
+}
+.nav li {
+	margin: 0 5px 10px 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+	*display:inline; /* ie7 */
+}
+.nav a {
+	padding: 3px 12px;
+	text-decoration: none;
+	color: #999;
+	line-height: 100%;
+}
+.nav a:hover {
+	color: #000;
+}
+.nav .current a {
+	background: #999;
+	color: #fff;
+	border-radius: 3px;
+}
+@media screen and (max-width: 600px) {
+	.nav {
+		position: relative;
+		min-height: 40px;
+	}	
+	.nav ul {
+		width: 180px;
+		padding: 5px 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border: solid 1px #aaa;
+		background: #FAFAFA url(images/icon-menu.png) no-repeat 10px 11px;
+		border-radius: 5px;
+		box-shadow: 0 1px 2px rgba(0,0,0,.3);
+	}
+	.nav li {
+		display: none;
+		margin: 0;
+	}
+	.nav .current {
+		display: block;
+	}
+	.nav a {
+		display: block;
+		padding: 5px 5px 5px 32px;
+		text-align: left;
+	}
+	.nav .current a {
+		background: none;
+		color: #666;
+	}
+	.nav ul:hover {
+		background-image: none;
+	}
+	.nav ul:hover li {
+		display: block;
+		margin: 0 0 5px;
+	}
+	.nav ul:hover .current {
+		background: url(images/icon-check.png) no-repeat 10px 7px;
+	}
+	<style>
+	
+	/* 
+	Max width before this PARTICULAR table gets nasty
+	This query will take effect for any screen smaller than 760px
+	and also iPads specifically.
+	*/
+	@media 
+	only screen and (max-width: 760px),
+	(min-device-width: 768px) and (max-device-width: 1024px)  {
+	
+		/* Force table to not be like tables anymore */
+		table, thead, tbody, th, td, tr { 
+			display: block; 
+		}
+		
+		/* Hide table headers (but not display: none;, for accessibility) */
+		thead tr { 
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+		
+		tr { border: 1px solid #ccc; }
+		
+		td { 
+			/* Behave  like a "row" */
+			border: none;
+			border-bottom: 1px solid #eee; 
+			position: relative;
+			padding-left: 50%; 
+		}
+		
+		td:before { 
+			/* Now like a table header */
+			position: absolute;
+			/* Top/left values mimic padding */
+			top: 6px;
+			left: 6px;
+			width: 45%; 
+			padding-right: 10px; 
+			white-space: nowrap;
+		}
+		
+		/*
+		Label the data
+		*/
+		td:nth-of-type(1):before { content: "1"; }
+		td:nth-of-type(2):before { content: "2"; }
+		td:nth-of-type(3):before { content: "3"; }
+		td:nth-of-type(4):before { content: "4"; }
+		td:nth-of-type(5):before { content: "5"; }
+	}
+	
+	/* Smartphones (portrait and landscape) ----------- */
+	@media only screen
+	and (min-device-width : 320px)
+	and (max-device-width : 480px) {
+		body { 
+			padding: 0; 
+			margin: 0; 
+			width: 320px; }
+		}
+	
+	/* iPads (portrait and landscape) ----------- */
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		body { 
+			width: 495px; 
+		}
